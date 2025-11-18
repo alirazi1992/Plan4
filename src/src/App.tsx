@@ -12,6 +12,7 @@ import { AuditLogs } from './pages/AuditLogs';
 import { SecurityLogs } from './pages/SecurityLogs';
 import { SettingsProfile } from './pages/SettingsProfile';
 import { SettingsSecurity } from './pages/SettingsSecurity';
+import { Messenger } from './pages/Messenger';
 
 interface PrivateRouteProps {
   children: React.ReactNode;
@@ -96,6 +97,9 @@ function AppRoutes() {
           </PrivateRoute>} />
       <Route path="/settings/security" element={<PrivateRoute roles={allRoles}>
             <SettingsSecurity />
+          </PrivateRoute>} />
+      <Route path="/messenger" element={<PrivateRoute roles={['admin', 'technician']}>
+            <Messenger />
           </PrivateRoute>} />
       <Route path="/" element={<Navigate to={getHomePathForRole(user?.role)} replace />} />
     </Routes>;

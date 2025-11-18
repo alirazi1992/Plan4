@@ -38,6 +38,11 @@ const workspaceShortcuts: SidebarNavItem[] = [{
 }];
 
 const utilityNav: SidebarNavItem[] = [{
+  id: 'messenger',
+  icon: 'messageCircle',
+  label: 'پیام‌رسان داخلی',
+  path: '/messenger'
+}, {
   id: 'settings',
   icon: 'settings',
   label: 'تنظیمات حساب',
