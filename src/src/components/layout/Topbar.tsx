@@ -26,6 +26,7 @@ export function Topbar({
     { id: "calendar", label: "تقویم تیمی", path: "/calendar" },
     { id: "audit", label: "گزارش‌های ممیزی", path: "/audit-logs" },
     { id: "security", label: "رخدادهای امنیتی", path: "/security-logs" },
+    { id: "messenger", label: "پیام‌رسان", path: "/messenger" },
   ];
 
   const clientNavItems = [
@@ -46,6 +47,11 @@ export function Topbar({
       id: "technician-calendar",
       label: "تقویم فنی",
       path: "/technician-calendar",
+    },
+    {
+      id: "technician-messenger",
+      label: "پیام‌رسان",
+      path: "/messenger",
     },
   ];
 
